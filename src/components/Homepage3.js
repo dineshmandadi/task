@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { useEffect,useState } from 'react';
+
 const Homepage3 = () => {
   const[record,setRecord] = useState([])
   const [modeldata,setModeldata]  = useState({
@@ -13,7 +14,8 @@ const Homepage3 = () => {
    }
    useEffect(() => {
       getData();
-   },[])
+   },[]);
+
   return (
    <div class='nav-bar' style={{display:'flex'}}>
     <div className='bar1' style={{backgroundColor:'blue',height:'590px',width:'300px',border:'2px solid blue',borderRadius:'30px'}}>
